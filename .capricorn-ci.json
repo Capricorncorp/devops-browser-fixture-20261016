@@ -3,16 +3,16 @@
   "steps": [
     { "name": "fixture-context", "run": "test -s server.cjs && test -s Dockerfile", "timeout": 60 }
   ],
-  "image": { "name": "browser-proof-20261016", "builder": "dockerfile", "dockerfile": "Dockerfile", "cache": true },
+  "image": { "name": "browser-target-20261016", "builder": "dockerfile", "dockerfile": "Dockerfile", "cache": true },
   "deploy": {
     "provider": "swarm",
     "target": {
-      "serviceName": "browser-proof-20261016",
+      "serviceName": "browser-target-20261016",
       "replicas": 1,
-      "ingressHost": "browser-proof-20261016-2.apps.capricorncorp.com",
+      "ingressHost": "browser-target-20261016-2.apps.capricorncorp.com",
       "limitCpu": "0.5",
       "limitMemory": "128M",
-      "env": { "PORT": "3000", "ACCEPTANCE_VERSION": "browser-proof-v2" }
+      "env": { "PORT": "3000", "ACCEPTANCE_VERSION": "browser-target-v0" }
     }
   }
 }
