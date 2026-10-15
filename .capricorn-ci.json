@@ -12,7 +12,7 @@
       "ingressHost": "browser-proof-20261016-2.apps.capricorncorp.com",
       "limitCpu": "0.5",
       "limitMemory": "128M",
-      "env": { "PORT": "3000", "ACCEPTANCE_VERSION": "browser-proof-v1" }
+      "env": { "PORT": "3000", "ACCEPTANCE_VERSION": "browser-proof-v2" }
     }
   }
 }

@@ -1,7 +1,7 @@
 'use strict';
 
 const http = require('node:http');
-const revision = 'browser-proof-v1';
+const revision = 'browser-proof-v2';
 http.createServer((_request, response) => {
   response.writeHead(200, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' });
   response.end(JSON.stringify({ service: 'disposable-devops-browser-proof', revision,
